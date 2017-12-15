@@ -43,6 +43,7 @@ const UserSchema = mongoose.Schema({
     // }
 });
 
+//export UserSchema 
 const User = module.exports = mongoose.model('User', UserSchema);
 
 module.exports.getUserById = function (id, callback) {

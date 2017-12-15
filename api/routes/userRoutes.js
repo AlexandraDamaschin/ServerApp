@@ -37,7 +37,7 @@ router.post('/authenticate', (req, res, next) => {
     User.getUserByEmail(email, (err, user) => {
         if (err) throw err;
         if (!user) {
-            return res.json({ success: false, msg: 'Email not found' })
+            return res.json({ success: false, msg: 'Email not found. Please register first!' })
         }
 
         User.comparePassword(password, user.password, (err, isMatch) => {
