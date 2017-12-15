@@ -4,7 +4,7 @@ const passport = require('passport');
 const jwt = require('jsonwebtoken');
 const config = require('../../config/database');
 const User = require('../models/userModel');
-
+// Alexandra Damaschin S00175680
 // Register
 router.post('/register', (req, res, next) => {
     let newUser = new User({

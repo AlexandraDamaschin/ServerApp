@@ -1,5 +1,5 @@
 'use strict'
-
+//Sophia Price S00160641
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const config = require('../../config/database');

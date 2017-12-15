@@ -1,5 +1,5 @@
 'use strict';
-
+ // Daniel O'Regan S00112276
 const mongoose = require('mongoose');
 const ProductModel = mongoose.model('Products');
 //const ProductModel= require('../models/productModel');

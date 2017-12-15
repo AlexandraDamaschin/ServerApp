@@ -13,7 +13,7 @@ const config = require('./config/database');
 // Routes
 const productRoutes = require('./api/routes/productRoutes'); // Daniel O'Regan S00112276
 const userRoutes = require('./api/routes/userRoutes'); // Alexandra Damaschin S00175680
-const transactionRoutes = require('./api/routes/transactionRoutes');
+const transactionRoutes = require('./api/routes/transactionRoutes'); //Sophia Price S00160641
 
 // Models
 const productModel = require('./api/models/productModel'); // Daniel O'Regan S00112276

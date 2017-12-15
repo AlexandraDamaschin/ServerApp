@@ -1,5 +1,5 @@
 'use strict';
-
+//Sophia Price S00160641
 const mongoose = require('mongoose');
 const Transaction = mongoose.model('Transaction');
 
