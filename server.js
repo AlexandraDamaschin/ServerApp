@@ -6,21 +6,21 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const path = require('path');
 // Set port on 8080 for Heroku
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8080; // Alexandra Damaschin S00175680
 // Database
 const config = require('./config/database');
 
 // Routes
-const productRoutes = require('./api/routes/productRoutes');
-const userRoutes = require('./api/routes/userRoutes');
+const productRoutes = require('./api/routes/productRoutes'); // Daniel O'Regan S00112276
+const userRoutes = require('./api/routes/userRoutes'); // Alexandra Damaschin S00175680
 const transactionRoutes = require('./api/routes/transactionRoutes');
 
 // Models
-const productModel = require('./api/models/productModel');
-const transactionModel = require('./api/models/transactionModel');
+const productModel = require('./api/models/productModel'); // Daniel O'Regan S00112276
+const transactionModel = require('./api/models/transactionModel'); // Alexandra Damaschin S00175680
 
 // Connect to db
-mongoose.connect(config.database);//
+mongoose.connect(config.database);// 
 
 // On error
 mongoose.connection.on('error', (err) => {
@@ -50,7 +50,7 @@ require('./config/passport')(passport);
 app.use('/users', userRoutes);
 
 transactionRoutes(app);
-productRoutes(app);
+productRoutes(app); // Daniel O'Regan S00112276
 
 app.use(function (req, res) {
     res.status(404).send({ url: req.originalUrl + ' not found' })
